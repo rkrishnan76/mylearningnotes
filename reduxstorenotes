@@ -26,3 +26,7 @@ store.dispatch(receiveComment('Redux is great!'));
 store.getState(); // ['Redux is great!']
 subscribe()
 store.subscribe(cb) takes in a listener callback function that will be invoked whenever the state of the store changes.
+
+What is true about the store in Redux? Select all that apply.
+Updates to the store can only be triggered by dispatching actions
+The store's subscribe() function helps connect React components to the store
