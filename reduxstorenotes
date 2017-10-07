@@ -1,0 +1,28 @@
+In order to create a store, you pass a reducer function to Redux’s createStore() method as the first argument. What’s returned from createStore() is the store itself, which has three properties on it:
+
+getState()
+dispatch()
+subscribe()
+getState()
+store.getState() doesn’t take any arguments and will return the current state of the store.
+dispatch()
+store.dispatch(action) takes in an action object and will call the reducer function, passing it the current state and the action which was dispatched. For example:
+
+// store.js
+
+import { createStore } from 'redux';
+import reducer from '../reducers/reducer';
+
+let store = createStore(reducer);
+
+const receiveComment = comment => ({
+  type: 'RECEIVE_COMMENT',
+  comment
+});
+
+export default store;
+store.getState(); // []
+store.dispatch(receiveComment('Redux is great!'));
+store.getState(); // ['Redux is great!']
+subscribe()
+store.subscribe(cb) takes in a listener callback function that will be invoked whenever the state of the store changes.
