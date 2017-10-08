@@ -43,3 +43,34 @@ Provider makes it possible for Redux to pass data from the store to any React co
 
 Components that need access to the store, however, still need a way to “connect” to it. We mentioned the connect() function earlier, which utilizes a technique in functional programming called currying. Before we see connect() in action, let’s take a closer look at how currying works!
 -------------
+Currying
+
+Here we have a simple plate() function which takes in two arguments: avegetable and a fruit.
+
+function plate(vegetables, fruit) {
+  return `I ate a plate of ${vegetables} and ${fruit}!`;
+}
+
+plate('corn', 'apples');
+Now say that for whatever reason we want to delay getting the fruit until a later point. One way we could achieve this would be to return a function which accepts the fruit that can be invoked at a later point.
+
+function plate(vegetables) {
+  return function fruitFunc (fruit) {
+    return `I ate a plate of ${vegetables} and ${fruit}!`;
+  }
+}
+
+const fruitFunc = plate('corn');
+Now we have a fruitFunc() that we can call, pass it a fruit, and the vegetables (corn) are still accessible via closures.
+
+Another way to write this without the delay would be like this:
+
+function plate(vegetables) {
+  return function fruitFunc (fruit) {
+    return `I ate a plate of ${vegetables} and ${fruit}!`;
+  }
+}
+
+const sentence = plate('corn')('apples');
+It may take a second for your brain to wrap your head around that double invocation, but try to break it down into steps. When you call the plate function, that returns the fruitFunc(), which is then invoked and passed “apples”. This technique is used in functional programming (as well as Redux) and is called currying (also partial application).
+------------------------
