@@ -39,3 +39,7 @@ list displays new user
 --------------------------
 Provider is really just a React component that we use to wrap the entire application. It takes in the store as a prop, then sets the store context, passing it down to all its subcomponents. All components wrapped by Provider will receive the store context
 -----------------
+Provider makes it possible for Redux to pass data from the store to any React components that need it. It uses React’s context feature to make this work.
+
+Components that need access to the store, however, still need a way to “connect” to it. We mentioned the connect() function earlier, which utilizes a technique in functional programming called currying. Before we see connect() in action, let’s take a closer look at how currying works!
+-------------
