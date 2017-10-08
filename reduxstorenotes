@@ -37,3 +37,5 @@ store.dispatch(adduser)
 result=store.getstate
 list displays new user
 --------------------------
+Provider is really just a React component that we use to wrap the entire application. It takes in the store as a prop, then sets the store context, passing it down to all its subcomponents. All components wrapped by Provider will receive the store context
+-----------------
