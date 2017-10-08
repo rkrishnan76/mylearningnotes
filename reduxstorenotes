@@ -74,3 +74,6 @@ function plate(vegetables) {
 const sentence = plate('corn')('apples');
 It may take a second for your brain to wrap your head around that double invocation, but try to break it down into steps. When you call the plate function, that returns the fruitFunc(), which is then invoked and passed “apples”. This technique is used in functional programming (as well as Redux) and is called currying (also partial application).
 ------------------------
+Currying is the process of partially providing the input to a function that requires additional data. The part of the Redux API that uses currying is its connect() method. Let's take a look!
+
+----------------
