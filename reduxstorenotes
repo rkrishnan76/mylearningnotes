@@ -30,3 +30,10 @@ store.subscribe(cb) takes in a listener callback function that will be invoked w
 What is true about the store in Redux? Select all that apply.
 Updates to the store can only be triggered by dispatching actions
 The store's subscribe() function helps connect React components to the store
+--------------------------
+create a reducer that sets the uer array to []
+call createstore(reducer)
+store.dispatch(adduser)
+result=store.getstate
+list displays new user
+--------------------------
