@@ -133,6 +133,9 @@ const mapStateToProps = (state, ownProps) => ({
 
 export default connect(mapStateToProps)(MyPhotos);
 This way, we can quickly pass in a prop to a component (e.g., user) and return all of the photos authored by that user from the store's state.
+-----------
+combineReducers() takes in an object as an argument
+combineReducers() returns a single reducer that can be used to create the store
 -----------------------
 QUESTION 3 OF 3
 
