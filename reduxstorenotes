@@ -157,3 +157,5 @@ Anser:
 fullName & handleAdd
 
 
+--------------------------
+We've separated our reducers to handle distinct, independent slices of state. This process is called reducer composition. However, we now have a problem: Redux’s createStore() method only accepts one reducer! In order to create a valid store, we still need to figure out a way to combine both of these reducers together into one reducer.
