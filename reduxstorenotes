@@ -225,3 +225,6 @@ Capability, in which all actions in an "Actions" folder, all reducers in a "Redu
 Feature, in which, say, a "Sidebar" folder includes a file for all of the Sidebar's actions, a file for all of the Sidebar's reducers, etc.
 All in all, there is no "right way" to split things up, though there are conventions we can practice to help manage the complexity of Redux. Considering the features, scale, and dependencies in your app, feel free to choose whichever structure makes the most sense.
 
+The official React/Redux Community on GitHub:https://github.com/reactjs
+The “Awesome list of Redux examples and middlewares” on GitHub:https://github.com/xgrommx/awesome-redux
+Redux Examples from the Redux docs:http://redux.js.org/docs/introduction/Examples.html
