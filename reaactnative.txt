@@ -1,0 +1,55 @@
+view
+ionicons
+text
+Touchables
+Users mainly interact with web apps with clicks. In the world of mobile apps, however, several different touch gestures are used to navigate through the app: tapping a button, swiping to scroll through a list, and so on.
+
+React Native offers a number of components to handle "tapping gestures," or what is called Touchables. Let's take a look at them in detail in the following video:
+
+Button
+TouchableHighlight
+TouchableOpacity
+
+QUESTION 1 OF 3
+What is true about handling touches in React Native apps? Select all that apply:
+
+Both Buttons and Touchables have access to an onPress prop
+
+
+Touchables can be nested within Views, and Views can be nested within Touchables
+
+Lists
+React Native comes with a few ways to render lists. 
+You'll probably run into ScrollView and FlatList components most commonly, so let's take a look at both of these in detail!
+
+
+TextInput
+KeyboardAvoidingView
+Slider
+Switch
+
+What is true about KeyboardAvoidingView? Select all that apply:
+
+Without KeyboardAvoidingView, the keyboard will "pop up," hiding text inputs
+
+KeyboardAvoidingView can wrap around TextInput components
+
+Padding can be adjusted via a prop on KeyboardAvoidingView
+
+image
+
+source require for local image
+source uri for remote image
+
+
+Other Components
+We've just seen some of the most important components built into React Native. These components will get you started with the essential functionalities in the apps that you build -- but the list of available components goes on! Feel free to review the React Native documentation for a complete list. For starters, we recommend checking out:
+
+ActivityIndicator
+Picker
+WebView
+Modal
+Note that certain components are also platform-specific! Though you want to build cross-platform components with composition, reusing as much code as possible, it may make sense for certain elements to be different depending on your audience (i.e., iOS vs. Android).
+
+Summary
+React Native provides a variety of built-in components for developing mobile applications. While some support basic functionality in an application (e.g., text, images, lists), others offer more specialized functionality (e.g., pulling to refresh, displaying a loading indicator). Feel free to check out Components and APIs in the React Native documentation for an exhaustive list.
