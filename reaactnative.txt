@@ -53,3 +53,20 @@ Note that certain components are also platform-specific! Though you want to buil
 
 Summary
 React Native provides a variety of built-in components for developing mobile applications. While some support basic functionality in an application (e.g., text, images, lists), others offer more specialized functionality (e.g., pulling to refresh, displaying a loading indicator). Feel free to check out Components and APIs in the React Native documentation for an exhaustive list.
+
+The React Native documentation on AsyncStorage mentions:
+
+AsyncStorage is a simple, unencrypted, asynchronous, persistent, key-value storage system that is global to the app. It should be used instead of LocalStorage.
+
+In the next video, we'll see just how we can implement it into our app!
+
+React Native's version of localStorage is AsyncStorage. Conveniently, since AsyncStorage is just an abstraction over iOS and Android equivalents, there's no need to consider the different environments.
+
+We took a close look at AsyncStorage's three main methods:
+
+setItem
+removeItem
+clear
+Feel free to visit the documentation for a complete list.
+
+In the next section, we'll incorporate Redux to help manage application state!
